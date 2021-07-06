@@ -1,4 +1,4 @@
-import copyImg from '../assets/images/copy.svg';
+import copyImg from '../../assets/images/copy.svg';
 
 import './styles.scss';
 
@@ -7,10 +7,6 @@ type RoomCodeProps = {
 }
 
 export function RoomCode(props: RoomCodeProps) {
-  function copyRoomCodeToClipboard() {
-    navigator.clipboard.writeText(props.code)
-  }
-
   return (
     <button className="room-code">
       <div>
